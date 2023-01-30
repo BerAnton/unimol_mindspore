@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"gelu_13067353422181627707_6",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"gelu_13067353422181627707_6__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"0e7a57b97e2cddfa06496afdc9d8debd161c2891f3e188447f37fe4337ceda3e"
+}

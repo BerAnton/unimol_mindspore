@@ -1,0 +1,28 @@
+{
+    "binFileName":"layer_norm_16273387796542366585_5",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"layer_norm_16273387796542366585_5__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+    ],
+    "sha256":"a31d433c1239613d36bb9e90adbd9d15d2edcc3dd38a102599c98b8060117317",
+    "workspace":{
+        "num":3,
+        "size":[
+            7360,
+            7360,
+            1024
+        ]
+    }
+}

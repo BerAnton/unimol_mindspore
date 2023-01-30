@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "binFileName":"te_fusion_mat_mul_mul_14502465498036179083_7",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_fusion_mat_mul_mul_14502465498036179083_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"5666a8dbebe23902032056d847ac7c703973dc39866eb8eba2b30decc5c2e79a"
+}

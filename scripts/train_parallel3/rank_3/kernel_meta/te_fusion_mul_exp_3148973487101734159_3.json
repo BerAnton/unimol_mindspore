@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "binFileName":"te_fusion_mul_exp_3148973487101734159_3",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_fusion_mul_exp_3148973487101734159_3__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"fd3e164b563a5a6cc41079683557d9b3fec277b22c217f1a8e6fdd0c79ba26e5"
+}

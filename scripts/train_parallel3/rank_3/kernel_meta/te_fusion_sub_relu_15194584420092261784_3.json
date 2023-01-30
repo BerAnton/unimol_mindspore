@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"te_fusion_sub_relu_15194584420092261784_3",
+    "binFileSuffix":".o",
+    "blockDim":3,
+    "kernelName":"te_fusion_sub_relu_15194584420092261784_3__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"6c61064f4a427b68d99b191a59fc865d9851028ab3f31f0151723871e9ca5526"
+}

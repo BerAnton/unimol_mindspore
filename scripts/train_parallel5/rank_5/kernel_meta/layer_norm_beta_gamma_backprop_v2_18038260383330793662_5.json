@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "binFileName":"layer_norm_beta_gamma_backprop_v2_18038260383330793662_5",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"layer_norm_beta_gamma_backprop_v2_18038260383330793662_5__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        1,
+        1
+    ],
+    "sha256":"8ea07dc4cde2c0d615f0bab49ba087a0ffe6563cce9c1dcbe8392b9113f5b54b"
+}

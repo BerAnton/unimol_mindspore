@@ -1,0 +1,15 @@
+{
+    "binFileName":"drop_out_do_mask_6407170454507252791_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"drop_out_do_mask_6407170454507252791_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"545fbe4ee75d858f7103fd1736ace80fc67b2da37a81a59e971e8b5c6358bc39"
+}

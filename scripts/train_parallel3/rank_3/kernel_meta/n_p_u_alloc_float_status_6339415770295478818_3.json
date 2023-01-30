@@ -1,0 +1,12 @@
+{
+    "binFileName":"n_p_u_alloc_float_status_6339415770295478818_3",
+    "binFileSuffix":".o",
+    "blockDim":1,
+    "kernelName":"n_p_u_alloc_float_status_6339415770295478818_3__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0
+    ],
+    "sha256":"f7a66c24b9e87189c9c4304bfbb18d82b0b69180155135b43e6bdbdd065fcf81"
+}

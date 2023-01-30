@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"sqrt_grad_11284062348840968501_1",
+    "binFileSuffix":".o",
+    "blockDim":4,
+    "kernelName":"sqrt_grad_11284062348840968501_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"35e68574481f1c51c2bc491913160b138fb5b9e0e0149319200041fb546550ba"
+}

@@ -1,0 +1,14 @@
+{
+    "KBHit":false,
+    "binFileName":"te_fusion_reduce_sum_d_neg_17267314273865811692_7",
+    "binFileSuffix":".o",
+    "blockDim":16,
+    "kernelName":"te_fusion_reduce_sum_d_neg_17267314273865811692_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"938346d062e0019d13d4c575f0d9960767f5f3012ff6d9abcbe4b38a9be1d50d"
+}

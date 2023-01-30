@@ -1,0 +1,15 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"abs_grad_3784229110567139467_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"abs_grad_3784229110567139467_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"b2af2ff8e8e7cc34521f4070f22ed5731be75ff29781af1dc221267eb7417b18"
+}

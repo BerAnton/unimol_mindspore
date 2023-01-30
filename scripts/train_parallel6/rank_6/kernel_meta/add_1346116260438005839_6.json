@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"add_1346116260438005839_6",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"add_1346116260438005839_6__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"f3749c4bb068394539ae1b44daf7851b641a9bf6c7a9a7a9106786c71e7206fb"
+}

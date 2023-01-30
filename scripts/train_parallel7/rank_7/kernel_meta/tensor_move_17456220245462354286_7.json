@@ -1,0 +1,13 @@
+{
+    "binFileName":"tensor_move_17456220245462354286_7",
+    "binFileSuffix":".o",
+    "blockDim":4,
+    "kernelName":"tensor_move_17456220245462354286_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"7c6ea1557e39dc6df74e45a8cc09e94cb6301e3a95517f779418f5c37e196231"
+}

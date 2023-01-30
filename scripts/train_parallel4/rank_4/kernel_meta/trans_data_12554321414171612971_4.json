@@ -1,0 +1,13 @@
+{
+    "binFileName":"trans_data_12554321414171612971_4",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"trans_data_12554321414171612971_4__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"e9b735f58da1103c283f0bb87e38e8e733a830fa44960c29543a193498aca5f7"
+}

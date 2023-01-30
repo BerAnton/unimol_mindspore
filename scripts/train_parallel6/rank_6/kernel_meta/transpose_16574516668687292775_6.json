@@ -1,0 +1,21 @@
+{
+    "binFileName":"transpose_16574516668687292775_6",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"transpose_16574516668687292775_6__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":16384,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"83225e329076278a39f6004fd5214726d7aa10f0dff34bb13668631f3476c807",
+    "workspace":{
+        "num":1,
+        "size":[
+            2048
+        ]
+    }
+}

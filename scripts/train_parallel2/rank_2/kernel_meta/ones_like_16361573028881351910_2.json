@@ -1,0 +1,14 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"ones_like_16361573028881351910_2",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"ones_like_16361573028881351910_2__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"e8fd860e45f350f42a69253fbb32e6f864de379f05e5a5ee03d4de85f694dc50"
+}

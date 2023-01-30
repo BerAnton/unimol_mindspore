@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"real_div_14660946087689663549_3",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"real_div_14660946087689663549_3__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"a126e256909b64e6365ef72e6c835bf4cc7c41bd23c6b52a79d161dca63d2ec8"
+}

@@ -1,0 +1,15 @@
+{
+    "binFileName":"split_d_8071447070136849610_1",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"split_d_8071447070136849610_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"2ee36ee77d500662064d72f760eaccb9673abe598969751d04c59a6d8d5b41bc"
+}

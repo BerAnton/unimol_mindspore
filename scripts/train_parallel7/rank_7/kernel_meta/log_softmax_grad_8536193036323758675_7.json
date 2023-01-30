@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "binFileName":"log_softmax_grad_8536193036323758675_7",
+    "binFileSuffix":".o",
+    "blockDim":16,
+    "kernelName":"log_softmax_grad_8536193036323758675_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"c8fe493133030d2243b300e6ec6cf631fa55d7b35ea23afc3ca48e781877b7b9"
+}

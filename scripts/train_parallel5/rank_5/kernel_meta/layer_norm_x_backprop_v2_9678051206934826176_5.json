@@ -1,0 +1,18 @@
+{
+    "binFileName":"layer_norm_x_backprop_v2_9678051206934826176_5",
+    "binFileSuffix":".o",
+    "blockDim":29,
+    "kernelName":"layer_norm_x_backprop_v2_9678051206934826176_5__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"9cfef05567788dd58c35628f1e9340a02a6712bb9d46bff88bf66f38888a30d3"
+}

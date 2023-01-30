@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "binFileName":"batch_matmul_2814444686686343080_3",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"batch_matmul_2814444686686343080_3__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"406abd8aa1872c47f1fd6956b9b347bd218c5772ff217fdaee974c116eb600df"
+}

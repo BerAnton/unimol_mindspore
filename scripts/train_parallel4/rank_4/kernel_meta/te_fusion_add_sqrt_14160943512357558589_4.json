@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"te_fusion_add_sqrt_14160943512357558589_4",
+    "binFileSuffix":".o",
+    "blockDim":3,
+    "kernelName":"te_fusion_add_sqrt_14160943512357558589_4__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"245eae56c5aee3f44fc198c0bc41680036254c606f1257e7cbc93342e5ad6201"
+}

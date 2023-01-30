@@ -1,0 +1,13 @@
+{
+    "binFileName":"reduce_sum_d_2485675316455247706_1",
+    "binFileSuffix":".o",
+    "blockDim":2,
+    "kernelName":"reduce_sum_d_2485675316455247706_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"cc6477ab7c1964038cf82529d0bd3fade672e3d29b3890d7e9ebec0493ce185f"
+}

@@ -1,0 +1,13 @@
+{
+    "binFileName":"n_p_u_get_float_status_14197352793131251708_6",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"n_p_u_get_float_status_14197352793131251708_6__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"9397fc92bc84ec1db0cd706e8b6097de84611475aa439932a31a1faf363e6961"
+}

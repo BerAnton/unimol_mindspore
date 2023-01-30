@@ -1,0 +1,14 @@
+{
+    "binFileName":"gather_v2_d_6298677098676286470_7",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"gather_v2_d_6298677098676286470_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"6d00d5528f967bf0699f55ca6bf8daf9b061fc3cae893a8d89a83b6adbe1645a"
+}

@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"abs_9917491601116809088_7",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"abs_9917491601116809088_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"0945f49c698a507aa972b9a0f914fc53b25972a950edfb11b560aa4c955902e0"
+}

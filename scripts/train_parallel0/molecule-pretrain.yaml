@@ -1,0 +1,67 @@
+# This config describes params for molecule pretrain task
+task: "molecule_pretrain"
+seed: 42
+
+enable_modelarts: False
+parameter_server: False
+# Url for modelarts
+data_url: ""
+train_url: ""
+checkpoint_url: ""
+# Local params
+backend_name: "HCCL"
+mode: GRAPH
+use_cache: False
+run_distribute: False
+device_target: "Ascend"
+device_num: 8
+output_path: "./output"
+checkpoint_path: "./checkpoints"
+# ==============================================================================
+# Training options
+accuracy_mode: "O3"
+eval: True
+epochs: 7
+# dataset params
+train_lmdb_dataset_path: "/media/datasets/datasets/unimol_datasets/ligands/train.lmdb"
+eval_lmdb_dataset_path: "/media/datasets/datasets/unimol_datasets/ligands/valid.lmdb"
+atoms_vocab_path: "atom_vocab.txt"
+remove_hydrogen: ""
+max_atoms: 512
+prob_mask: 0.15
+prob_unmask: 0.15
+prob_random_token: 0.15
+coords_noise_type: "uniform"
+coords_noise_coef: 3.0
+dataset_sink_mode: False
+batch_size: 16
+num_parallel_workers: 2
+python_multiprocessing: False
+# optimizer params
+optimizer: "adam"
+beta1: 0.9 
+beta2: 0.99
+eps: 1.0e-6
+weight_decay: 1.0e-4
+# learning rate + warmup params
+peak_lr: 1.0e-4
+warmup_steps: 10000
+max_steps: 1000000
+# model params
+encoder_layers: 15
+encoder_emb_dim: 512
+encoder_ff_emb_dim: 2048
+encoder_attention_heads: 64
+gaus_kernel_channels: 128
+dropout: 0.9
+max_seq_len: 256
+# loss params
+token_loss_coef: 1.0
+coords_loss_coef: 5.0
+distance_loss_coef: 10.0
+beta: 1.0
+reduction: "mean"
+# Checkpoint callback params
+save_checkpoint: True
+save_checkpoint_steps: 1
+keep_checkpoint_max: 15

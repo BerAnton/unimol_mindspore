@@ -1,0 +1,15 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"smooth_l1_loss_5799603054572290363_5",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"smooth_l1_loss_5799603054572290363_5__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"6bcedb0c3420ba98433f97d68ac21a109784402bd7480b222acf8db234519d79"
+}

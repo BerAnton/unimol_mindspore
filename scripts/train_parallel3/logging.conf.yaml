@@ -1,0 +1,16 @@
+version: 1
+formatters:
+  basic:
+    class: logging.Formatter
+    format: '%(asctime)s %(levelname)s: %(message)s'
+handlers:
+  file_handler_debug:
+    class: logging.FileHandler
+    filename: stackoverflow_analytics.log
+    level: DEBUG
+    formatter: basic
+  console_handler:
+    class: logging.StreamHandler
+    
+    level: WARNING
+    formatter: basic

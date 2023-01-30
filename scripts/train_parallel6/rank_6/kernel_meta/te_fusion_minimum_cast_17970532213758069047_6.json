@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"te_fusion_minimum_cast_17970532213758069047_6",
+    "binFileSuffix":".o",
+    "blockDim":1,
+    "kernelName":"te_fusion_minimum_cast_17970532213758069047_6__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"ddd1288942a69efe6709b0e4bd5a30c030ba645a08a78040c465bf2f5736d010"
+}

@@ -1,0 +1,15 @@
+{
+    "binFileName":"masked_fill_477023909734398302_1",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"masked_fill_477023909734398302_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"c8bef9d4c4108d12721332c90445bc7bc31e8894e83f3136a4fb2fac22a165d2"
+}

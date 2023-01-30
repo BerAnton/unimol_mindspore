@@ -1,0 +1,16 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"pow_17745516117367234368_2",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"pow_17745516117367234368_2__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"55ef2cfc581b14bd0f98bb9d9852a17fc813975e6c20d1163cf81323ffb865f9"
+}

@@ -1,0 +1,13 @@
+{
+    "binFileName":"tile_d_7610114804722439401_7",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"tile_d_7610114804722439401_7__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"0c50595b4be19f0e7361f2fa5e60a7b7a97f065f2076e658634bfa1af41a39c7"
+}

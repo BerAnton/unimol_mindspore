@@ -1,0 +1,14 @@
+{
+    "binFileName":"confusion_softmax_grad_18351179240996853491_1",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"confusion_softmax_grad_18351179240996853491_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"a48be4374e7d5265b3e22de499bc655b3283c3fcaf64ff805b90a384373466ec"
+}
