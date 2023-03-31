@@ -34,6 +34,8 @@ class EncoderWithPair(nn.Cell):
         ])
         self.dropout = nn.Dropout(dropout)
         
+        self.fill_value = ms.Tensor(0, dtype=ms.float32)
+        
     def construct(
         self,
         embedding: ms.Tensor,
@@ -56,7 +58,7 @@ class EncoderWithPair(nn.Cell):
         
         X_norm = self._norm_loss(X)
         if input_padding_mask is not None:
-            token_mask = 1.0 - ops.cast(input_padding_mask, X.dtype)
+            token_mask = 1.0 - input_padding_mask
         else:
             token_mask = ops.ones_like(X_norm, device=X.device)
         X_norm = self._masked_mean(token_mask, X_norm)
@@ -64,7 +66,7 @@ class EncoderWithPair(nn.Cell):
         X = self.final_norm(X)
         
         delta_pair_repr = attention_bias - input_attention_bias
-        delta_pair_repr, _ = self._fill_attn_bias(batch_size, seq_length, delta_pair_repr, input_padding_mask, 0)
+        delta_pair_repr, _ = self._fill_attn_bias(batch_size, seq_length, delta_pair_repr, input_padding_mask)
         attention_bias = ops.transpose(
             attention_bias.view(batch_size, -1, seq_length, seq_length),
             (0, 2, 3, 1)
@@ -84,16 +86,15 @@ class EncoderWithPair(nn.Cell):
 
     def _fill_attn_bias(self, batch_size, seq_length, 
                         attention_bias,
-                        padding_mask, fill_value=ms.Tensor(float("-inf"))):
+                        padding_mask):  
         """Function to merge attention bias and padding mask."""
-        fill_value = ops.cast(ms.Tensor(fill_value), attention_bias.dtype)
         attention_bias = attention_bias.view(
             batch_size, -1, seq_length, seq_length
         )
         padding_mask = ops.expand_dims(ops.expand_dims(padding_mask, 1), 2)
         padding_mask = ops.cast(padding_mask, ms.bool_)
         attention_bias = ops.masked_fill(attention_bias, padding_mask,
-                                   fill_value).view(-1, seq_length, seq_length)
+                                   self.fill_value).view(-1, seq_length, seq_length)
         return attention_bias, padding_mask
 
     def _norm_loss(self, x, eps=1e-10, tolerance=1.0):
@@ -101,7 +102,6 @@ class EncoderWithPair(nn.Cell):
         
         See paper Appendix F for info.
         """
-        x = ops.cast(x, ms.float32)
         max_norm = x.shape[-1] ** 0.5
         squares = ops.pow(x, 2)
         norm = ops.sqrt(squares.sum(axis=-1) + eps)
@@ -111,4 +111,3 @@ class EncoderWithPair(nn.Cell):
     @staticmethod
     def _masked_mean(mask, value, axis=-1, eps=1e-10):
         return (mask * value).sum(axis=axis) / (eps + mask.sum(axis=axis)).mean()
-    

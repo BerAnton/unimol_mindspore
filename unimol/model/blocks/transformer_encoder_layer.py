@@ -1,5 +1,6 @@
 import mindspore as ms
 import mindspore.nn as nn
+import mindspore.ops as ops
 
 from .attention import MultiHeadSelfAttention
 
@@ -28,7 +29,8 @@ class EncoderLayer(nn.Cell):
         ])
         self.dropout = nn.Dropout(dropout)
         self.attention_layer_norm = nn.LayerNorm([self.emb_dim])
-        self.post_layer_norm = nn.LayerNorm([self.emb_dim])       
+        self.post_layer_norm = nn.LayerNorm([self.emb_dim])
+        
         
     def construct(
         self,

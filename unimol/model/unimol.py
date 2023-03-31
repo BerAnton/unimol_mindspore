@@ -78,18 +78,19 @@ class UniMol(nn.Cell):
         graph_attn_bias = self._get_distance_features(distance, edge_types)
         (encoder_rep, encoder_pair_rep, delta_encoder_pair_rep,
               x_norm, delta_encoder_pair_rep_norm) = self.encoder(embed_tokens, graph_attn_bias, pad_mask)
-        encoder_pair_rep[ops.equal(encoder_pair_rep, float("-inf"))] = 0
+        encoder_pair_rep[ops.equal(encoder_pair_rep, float("-inf"))] = 0  # unsupported syntax in graph mode
         encoder_distance = None
         encoder_coords = None
         if features_only:
             return (encoder_rep, encoder_coords, encoder_distance, x_norm, delta_encoder_pair_rep_norm)
         logits = self.mask_head(encoder_rep, masked_tokens)
         coords_emb = coords
-        if pad_mask.sum() > 0.0:
+        condition = pad_mask.asnumpy().any()
+        if condition:  # Maybe error somewhere here
             atom_num = ((ops.ones_like(pad_mask) - pad_mask).sum(axis=1) - 1).view(-1, 1, 1, 1)
         else:
             shape = ops.shape(coords)
-            atom_num = ms.Tensor(shape[1] - 1, dtype=ms.int32)
+            atom_num = ms.Tensor(shape[1] - 1, dtype=ms.int32)  # unsupported syntax in graph mode
         delta_coords = ops.expand_dims(coords_emb, axis=1) - ops.expand_dims(coords_emb, axis=2)
         attention_probs = self.pair_coord_proj(delta_encoder_pair_rep)
         coords_update = delta_coords / atom_num * attention_probs

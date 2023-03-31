@@ -9,22 +9,20 @@ data_url: ""
 train_url: ""
 checkpoint_url: ""
 # Local params
-backend_name: "HCCL"
 mode: GRAPH
 use_cache: False
-run_distribute: False
-device_target: "Ascend"
+run_distribute: True
+device_target: Ascend
 device_num: 8
 output_path: "./output"
 checkpoint_path: "./checkpoints"
 # ==============================================================================
 # Training options
-accuracy_mode: "O3"
-eval: True
+accuracy_mode: O2
 epochs: 7
 # dataset params
-train_lmdb_dataset_path: "/media/datasets/datasets/unimol_datasets/ligands/train.lmdb"
-eval_lmdb_dataset_path: "/media/datasets/datasets/unimol_datasets/ligands/valid.lmdb"
+train_lmdb_dataset_path: "./example_data/molecule/train.lmdb"
+eval_lmdb_dataset_path: "./example_data/molecule/valid.lmdb"
 atoms_vocab_path: "atom_vocab.txt"
 remove_hydrogen: ""
 max_atoms: 512
@@ -33,10 +31,10 @@ prob_unmask: 0.15
 prob_random_token: 0.15
 coords_noise_type: "uniform"
 coords_noise_coef: 3.0
-dataset_sink_mode: False
 batch_size: 16
-num_parallel_workers: 2
-python_multiprocessing: False
+num_parallel_workers: 8
+python_multiprocessing: True
+max_rowsize: 1
 # optimizer params
 optimizer: "adam"
 beta1: 0.9 

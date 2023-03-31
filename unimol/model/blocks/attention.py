@@ -22,7 +22,7 @@ class MultiHeadSelfAttention(nn.Cell):
             )
 
         self.scaling_factor = ops.pow(ops.sqrt(ms.Tensor(self.head_dim, ms.float32)), -0.5)
-        self.fill_value = ops.cast(ms.Tensor(float("-inf")), ms.float16)
+        self.fill_value = ms.Tensor(float("-inf"), dtype=ms.float32)
 
         if self.dropout_rate is not None:
             self.dropout = nn.Dropout(dropout_rate)

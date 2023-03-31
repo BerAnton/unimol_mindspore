@@ -15,29 +15,29 @@
 import mindspore as ms
 import mindspore.nn as nn
 import mindspore.ops as ops
-from mindspore.common.initializer import initializer
 
 
 class GaussianLayer(nn.Cell):
     def __init__(self, K: int, edge_types: int):
         super(GaussianLayer, self).__init__()
         self.K = K
-        self.means = initializer('normal', shape=(self.K,))
-        self.stds = initializer('normal', shape=(self.K,))
+        self.means = nn.Embedding(1, K)
+        self.stds = nn.Embedding(1, K)
         self.mul = nn.Embedding(edge_types, 1)
         self.bias = nn.Embedding(edge_types, 1)
 
     def construct(self, X, edge_types):
-        # TODO: bug is here. edge_types has int64 dtype, which may cause problems during backprop
-        edge_types = ops.cast(edge_types, ms.int32) # TODO: temp solution: simple cast to ms.int32
+        edge_types = ops.cast(edge_types, ms.int32)
         mul = self.mul(edge_types)
         bias = self.bias(edge_types)
         X = mul * ops.expand_dims(X, -1) + bias
         X = ops.broadcast_to(X, (X.shape[0], X.shape[1], -1, self.K))
-        out = self._gaussian(X)
+        mean = self.means.embedding_table.view(-1)
+        std = self.stds.embedding_table.view(-1) + 1e-5
+        out = self._gaussian(X, mean, std)
         return out
 
-    def _gaussian(self, x):
+    def _gaussian(self, x, mean, std):
         pi = ms.Tensor(3.14159, ms.float32)
         a = ops.pow((2 * pi), 0.5)
-        return ops.exp(-0.5 * (((x - self.means) / self.stds) ** 2)) / (a * self.stds)
+        return ops.exp(-0.5 * (((x - mean) / std) ** 2)) / (a * std)
