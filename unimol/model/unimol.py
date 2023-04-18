@@ -85,8 +85,7 @@ class UniMol(nn.Cell):
             return (encoder_rep, encoder_coords, encoder_distance, x_norm, delta_encoder_pair_rep_norm)
         logits = self.mask_head(encoder_rep, masked_tokens)
         coords_emb = coords
-        condition = pad_mask.asnumpy().any()
-        if condition:  # Maybe error somewhere here
+        if pad_mask.sum():  # Maybe error somewhere here
             atom_num = ((ops.ones_like(pad_mask) - pad_mask).sum(axis=1) - 1).view(-1, 1, 1, 1)
         else:
             shape = ops.shape(coords)
